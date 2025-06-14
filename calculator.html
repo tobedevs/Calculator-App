@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="button-input">
+            <input id="calculator-input">
+        </div>
+        <div id="buttons">
+            <button class="clr-display" onclick="clearDisplay()">C</button>
+           <button class="blue-display" onclick="displayItem('%')">%</button>
+           <button class="blue-display" onclick="displayItem('/')">/</button>
+           <button class="blue-display" onclick="deleteItem('X')"><i class="fa fa-backspace"></i></button>
+           <button class="" onclick="displayItem('7')">7</button>
+           <button class="" onclick="displayItem('8')">8</button>
+           <button class="" onclick="displayItem('9')">9</button>
+           <button class="blue-display" onclick="displayItem('*')">*</button>
+           <button class="" onclick="displayItem('4')">4</button>
+           <button class="" onclick="displayItem('5')">5</button>
+           <button class="" onclick="displayItem('6')">6</button>
+           <button class="blue-display" onclick="displayItem('-')">-</button>
+           <button class="" onclick="displayItem('1')">1</button>
+           <button class="" onclick="displayItem('2')">2</button>
+           <button class="" onclick="displayItem('3')">3</button>
+           <button class="blue-display" onclick="displayItem('+')">+</button>
+           <button class="Pie" onclick="displayPie('π')">π</button>
+           <button class="" onclick="displayItem('0')">0</button>
+           <button class="" onclick="displayItem('.')">.</button>
+           <button class="bg-blue" onclick="calculate()">=</button>
+        </div>
+    </div>
+   
+</body>
+</html>
